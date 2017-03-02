@@ -1,0 +1,293 @@
+/* branding color: #3FCEFF */
+
+h1,h2,h3{
+	margin:0;
+}
+
+li{
+	list-style-type: none;
+}
+ul{
+	margin:0;
+	padding-left: 0;
+}
+h1{
+	text-transform: uppercase;
+}
+h2{
+	margin-bottom: 40px;
+	text-transform:capitalize;
+	font-size: 1.8rem;
+	text-align: center;
+}
+h3{
+	text-transform: uppercase;
+}
+
+
+section{
+	padding: 100px 0px;
+}
+p {
+	margin:30 0px;
+	font-weight: 200;
+}
+label{
+	font-weight: 200;
+	text-transform: uppercase;
+	font-size:0.8rem;
+}
+.button{
+	display: inline-block;
+	padding: 16px 28px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	background-color: #3FCEFF;
+	color: white;
+	text-decoration: none;
+	font-size: .9rem;
+	letter-spacing: 1px;
+}
+
+
+.clearfix:after, .row:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.container{
+	display: block;
+	margin:0 auto;
+	width:1180px;
+}
+.video-wrapper{
+	position: absolute;
+	right: 0;
+    bottom:0;
+	width:95%;
+	height: 335px;
+	background-color: #ccc;
+}
+.video-wrapper iframe{
+	position: relative;
+	left: -15px;
+	top: -15px;
+}
+
+#logo{
+	float:left;
+}
+#nav{
+	float:right;
+	line-height: 108px;
+	text-transform: uppercase;
+
+}
+#nav li{
+	float:left;
+}
+
+#nav a{
+	display: block;
+	padding:0 21px;
+	height: 100%;
+	color:#333;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+#nav a:hover{
+	color:#3FCEFF;
+
+}
+
+.banner{
+	padding:235px 0;
+	text-align:center;
+	background-image: url(http://loremflickr.com/2000/900);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	text-transform: uppercase;
+}
+.banner .introtext{
+	margin-bottom: 10px;
+	font-size: 1.2rem;
+	font-weight: 100;
+	letter-spacing: 4px;	
+}
+.banner h1{
+	margin-bottom: 15px;
+	font-size:3.4rem;
+	letter-spacing: 1px;
+}
+.banner .subtitle{
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+}
+.banner .intro-wrapper{
+	margin-bottom: 120px;
+}
+
+#about-company{
+	margin-bottom: 100px;
+}
+
+
+#about-company .col-6:nth-child(2){
+   height:335px;
+}
+
+#about-company h2{
+	text-align: left;
+}
+
+.progress-bar{
+	background-color: rgba(229,229,229,0.7);
+	height:6px;
+}
+.percentage{
+	position:absolute;
+	bottom:5px;
+	right:0px;
+	font-weight:200;
+	font-size:0.8rem;
+}
+.progress-red{
+	position:relative;
+	width:90%;
+	height:6px;
+	background-color: rgba(255,0,0,0.7);
+}
+
+.progress-blue{
+	position:relative;
+	width:97%;
+	height:6px;
+	background-color: rgba(0,214,255,0.7);
+}
+
+.progress-green{
+	position:relative;
+	width:95%;
+	height:6px;
+	background-color: rgba(0,228,176,0.7);
+}
+.progress-yellow{
+	position:relative;
+	width:92%;
+	height:6px;
+	background-color: rgba(253,200,0,0.7);
+}
+#bar{
+	margin-bottom: 45px;
+}
+
+#working-process{
+	background-image: url(http://placehold.it/2000x550);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.title-group{
+	position:relative;
+}
+
+hr {position:absolute;
+	top:40px;
+	left:45%;
+	width:10%;
+	height:2px;
+	background-color:#3FCEFF ;
+	border:0px;
+}
+
+#working-process .row .col-3{
+	padding:50px 20px;
+}
+
+
+
+#working-process .row .col-3:hover{
+	background-color: rgb(255,255,255);
+	border-width: 0 0 30 0px;
+	border-color: #3FCEFF;
+	border-bottom-style: solid;
+	
+}
+#working-process .row .col-3:hover .change{
+	color:#3FCEFF;
+}
+
+#what-we-do .row .col-4:hover .col-10 h3{
+	color:#3FCEFF;
+}
+
+#mission-banner{
+	background-image: url(http://placehold.it/2000x320);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+
+.price{
+	background-color: rgba(229,229,229,0.7);
+	height: 90px;
+	text-align: center;
+
+}
+
+/*Grid*/
+.row{
+	margin:0 -15px;
+}
+.col-6{
+	position: relative;
+	box-sizing: border-box;
+	float:left;
+	padding: 0 15px;
+	width:50%;
+}
+.col-3{
+	box-sizing: border-box;
+	float:left;
+	width:25%;
+	text-align: center;
+}
+.col-4{
+	box-sizing: border-box;
+	float:left;
+	width:33.33%;
+}
+.col-2{
+	box-sizing: border-box;
+	float:left;
+	width:16.66%;
+	height:90px;
+	padding:0 20px;
+}
+.col-10{
+	box-sizing: border-box;
+	float:left;
+	width:83.34%;
+	padding:0 20px;
+}
+
+.small-container{
+	display: block;
+	margin:0 auto;
+
+}
+
+.dollar-sign{
+
+}
+.amount{
+	font-size: 1.5rem;
+
+}
+.length{
+	font-size: 0.5rem;
+}
