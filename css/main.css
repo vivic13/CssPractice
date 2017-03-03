@@ -17,12 +17,14 @@ h1{
 h2{
 	margin-bottom: 40px;
 	text-transform:capitalize;
-	font-size: 1.8rem;
+	font-size: 1.5rem;
 	text-align: center;
 }
 h3{
 	text-transform: uppercase;
+	font-size: 0.9rem;
 }
+
 
 
 section{
@@ -45,12 +47,12 @@ label{
 	background-color: #3FCEFF;
 	color: white;
 	text-decoration: none;
-	font-size: .9rem;
+	font-size: .7rem;
 	letter-spacing: 1px;
 }
 
 
-.clearfix:after, .row:after{
+.clearfix:after, .row:after ,.contain-small:after{
 	content: "";
 	display: table;
 	clear: both;
@@ -59,7 +61,7 @@ label{
 .container{
 	display: block;
 	margin:0 auto;
-	width:1180px;
+	max-width:900px;
 }
 .video-wrapper{
 	position: absolute;
@@ -100,6 +102,13 @@ label{
 #nav a:hover{
 	color:#3FCEFF;
 
+}
+#menu-trigger {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 52px;
 }
 
 .banner{
@@ -221,7 +230,15 @@ hr {position:absolute;
 	color:#3FCEFF;
 }
 
+#what-we-do{
+	height: 380px;
+}
+
+
 #what-we-do .row .col-4:hover .col-10 h3{
+	color:#3FCEFF;
+}
+#what-we-do .row .col-4:hover .col-2 i{
 	color:#3FCEFF;
 }
 
@@ -230,13 +247,100 @@ hr {position:absolute;
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
+	color:white;
+}
+#mission-banner i{
+	color:#3FCEFF;
+
 }
 
-.price{
-	background-color: rgba(229,229,229,0.7);
-	height: 90px;
-	text-align: center;
+#pricing-table {
+	background-color: rgba(229,229,229,0.7)
+}
 
+
+
+
+.price{
+	width:100%;
+	background-color: rgba(230,230,230,1);
+	height: 90px;
+	position:relative;
+	color:#3FCEFF;
+
+}
+.price p{
+	margin:0;
+}
+.purchase{
+	border:0.5 0 0 0px;
+	border-top-style: solid;
+	border-top-color:rgba(230,230,230,1); 
+	padding-top:20px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.purchase .button{
+	display: inline-block;
+	padding: 16px 28px;
+	border-radius: 30px;
+	text-transform: uppercase;
+	background-color: white;
+	color: #3FCEFF;
+	border-color: #3FCEFF;
+	border-width: 1px;
+	border-style: solid;
+	text-decoration: none;
+	font-size: .7rem;
+	letter-spacing: 1px;
+
+}
+.contain-small{
+	position:absolute;
+	top:35px;
+	right:25%;
+	display: block;
+	width:50%;
+	height:50%;
+}
+.price i{
+	font-size: 0.3rem;
+	width:20%;
+	margin:0;
+	box-sizing: border-box;
+}
+.amount{
+	display: inline-block;
+	vertical-align: text-bottom;
+	font-weight: 300;
+	font-size: 1rem;
+	width:40%;
+	margin:0;
+	box-sizing: border-box;
+}
+.length{
+	display: inline-block;
+	font-size: 0.3rem;
+	color:black;
+	text-transform: capitalize;
+	font-weight: 200;
+	text-align:left;
+	width:30%;
+	box-sizing: border-box;
+	margin:0;
+}
+
+#pricing-table .col-3:hover .price{
+	background-color: #3FCEFF;
+	color:white;
+}
+#pricing-table .col-3:hover .length{
+	color:white;
+}
+#pricing-table .col-3:hover .purchase .button{
+	background-color: #3FCEFF;
+	color:white;
 }
 
 /*Grid*/
@@ -254,40 +358,121 @@ hr {position:absolute;
 	box-sizing: border-box;
 	float:left;
 	width:25%;
+	padding:0 15px;
 	text-align: center;
 }
 .col-4{
 	box-sizing: border-box;
 	float:left;
 	width:33.33%;
+	padding:0 15px;
+	margin-top:35px;
 }
 .col-2{
+	position: relative;;
 	box-sizing: border-box;
 	float:left;
 	width:16.66%;
-	height:90px;
-	padding:0 20px;
+	padding:0 15px;
+	height:102px;
+
 }
 .col-10{
 	box-sizing: border-box;
 	float:left;
 	width:83.34%;
-	padding:0 20px;
+	height:100%;
+	padding:0 15px;
+	
 }
-
-.small-container{
-	display: block;
-	margin:0 auto;
-
-}
-
-.dollar-sign{
-
-}
-.amount{
-	font-size: 1.5rem;
+.col-2 i{
+	position:absolute;
+	top:50%;
+	right:5px;
+	width:16.64%;
+	height:50%;
 
 }
-.length{
-	font-size: 0.5rem;
+.col-10 p{
+	font-size: 0.8rem;
 }
+
+
+#pricing-table .col-3{
+	background-color: white;
+	box-sizing: border-box;
+	width:23%;
+	margin:0 1%;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:20px;
+	padding-bottom: 30px;
+}
+
+
+
+
+
+@media(max-width: 1000px){
+	.contianer{
+		max-width: 600px;
+	}
+}
+
+
+
+
+@media(max-width:600px){
+
+	.container{
+		width:500px;
+	}
+	#nav {
+		display: none;
+	}
+	#nav.open {
+		display: block;
+		float: none;
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    padding-top: 50%;
+	    width: 100%;
+	    height: 100%;
+	    background: #ccc;
+	    text-align: center;
+	}
+
+	#nav li {
+		float: none;
+	}
+
+	#menu-trigger {
+		display: block;
+	}
+
+
+	.col-6{
+		width:100%;
+		margin-bottom: 30px;
+	}
+	.col-3{
+		width:100%;
+	}
+	.col-4{
+		width:100%;
+	}
+	#pricing-table .col-3{
+		width:100%;
+		margin-bottom:30px;
+	}
+
+
+	#what-we-do{
+		height:100%;
+	}
+    
+}
+
+
+
