@@ -413,9 +413,57 @@ hr {position:absolute;
 
 
 
-@media(max-width: 1000px){
+@media(max-width:  900px){
 	.contianer{
-		max-width: 600px;
+		max-width: 400px;
+	}
+	#nav {
+		display: none;
+	}
+	#nav.open {
+		display: block;
+		float: none;
+	    position: fixed;
+	    top: 0;
+	    right: 0;
+	    padding-top: 5%;
+	    width: 100vw;
+	    height:100vh;
+	    background-color:grey;
+	    text-align: center;
+	    z-index: 1;
+
+	}
+
+	#nav li {
+		float: none;
+		padding:0;
+		height: 60px;
+	}
+
+	#menu-trigger {
+		display: block;
+		z-index: 1;
+
+	}
+
+
+	.col-6{
+		width:100%;
+		margin-bottom: 30px;
+	}
+	.col-3{
+		width:50%;
+	}
+	
+	#pricing-table .col-3{
+		width:100%;
+		margin-bottom:30px;
+	}
+
+
+	#what-we-do{
+		height:100%;
 	}
 }
 
@@ -427,54 +475,12 @@ hr {position:absolute;
 	
 		max-width: 300px;
 	}
-	#nav {
-		display: none;
-	}
-	#nav.open {
-		display: block;
-		float: none;
-	    position: absolute;
-	    top: 0;
-	    right: 0;
-	    padding-top: 5%;
-	    width: 100vw;
-	    height: 100vh;
-	    background: #ccc;
-	    text-align: center;
-	    overflow: hidden;
-
-	}
-
-	#nav li {
-		float: none;
-		padding:0;
-		height: 90px;
-	}
-
-	#menu-trigger {
-		display: block;
-	}
-
-
-	.col-6{
-		width:100%;
-		margin-bottom: 30px;
-	}
-	.col-3{
-		width:100%;
-	}
+	
+	
 	.col-4{
 		width:100%;
 	}
-	#pricing-table .col-3{
-		width:100%;
-		margin-bottom:30px;
-	}
-
-
-	#what-we-do{
-		height:100%;
-	}
+	
     
 }
 
