@@ -480,6 +480,15 @@ hr {position:absolute;
 	.col-4{
 		width:100%;
 	}
+
+	.col-3{
+		width:100%;
+	}
+
+	#pricing-table .col-3{
+		width:98%;
+		margin-bottom:30px;
+	}
 	
     
 }
